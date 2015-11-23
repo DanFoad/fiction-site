@@ -58,10 +58,10 @@
             <hr class="fade fade--toleft" />
 
             <dl class="sidebar__menu">
-                <dt>Main Menu</dt>
+                <dt class="sidebar__menu--title">Main Menu</dt>
                 <dd class="sidebar__link"><a href="#"><i class="fa fa-user"></i>Profile</a></dd>
                 <dd class="sidebar__link"><a href="#"><i class="fa fa-book"></i>Stories</a></dd>
-                <dd class="sidebar__link"><a href="#"><i class="fa fa-star-o"></i>Favourites</a></dd>
+                <dd class="sidebar__link"><a href="#"><i class="fa fa-star"></i>Favourites</a></dd>
                 <dd class="sidebar__link"><a href="#"><i class="fa fa-question"></i>Random Story</a></dd>
                 <dd class="sidebar__link"><a href="#"><i class="fa fa-info-circle"></i>FAQ</a></dd>
             </dl>
