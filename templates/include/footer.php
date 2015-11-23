@@ -1,6 +1,7 @@
-    </main>
+        </main>
+    </div>
 
-    <script src="/script/main.js"></script>
+    <script src="<?php echo $GLOBALS["documentroot"]; ?>/script/main.js"></script>
 
 </body>
 </html>
