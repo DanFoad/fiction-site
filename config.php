@@ -3,6 +3,11 @@
     ini_set("display_errors", true); // Set false on prod server
     date_default_timezone_set("Europe/London");
 
+    define("DB_DSN", "mysql:host=localhost;dbname=fictionsite");
+    // Change this on prod server
+    define("DB_USERNAME", "root");
+    define("DB_PASSWORD", "toor");
+
     $config = array();
     $GLOBALS["documentroot"] = "/fiction-site";
 

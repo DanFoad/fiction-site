@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="<?php echo $GLOBALS["documentroot"]; ?>/style/main.css" />
+    <?php
+        if (isset($results["styles"])) {
+            echo "<link rel=\"stylesheet\" href=\"".$GLOBALS["documentroot"]."/style/".$results["styles"].".css\" />";
+        }
+    ?>
 
     <link rel="icon" type="image/png" href="favicon.png" />
 
