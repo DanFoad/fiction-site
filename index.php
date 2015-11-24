@@ -21,7 +21,7 @@
         } else {
             $id = $_GET["id"];
             $results["pageTitle"] = "User Profile";
-            require("/templates/user.php");
+            require("templates/user.php");
         }
     }
 
@@ -35,10 +35,10 @@
             if (isset($_GET["chp"])) {
                 $chp = $_GET["chp"];
                 $results["pageTitle"] = "Story Name - Chapter N";
-                require("/templates/storyChapter.php");
+                require("templates/storyChapter.php");
             } else {
                 $results["pageTitle"] = "Story Name by Author";
-                require("/templates/story.php");
+                require("templates/story.php");
             }
 
         }

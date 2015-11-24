@@ -1,5 +1,5 @@
 <?php
-    require_once("/templates/include/header.php");
+    require_once("include/header.php");
 ?>
 
 <div class="story">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="comments">
+            <div class="comments container">
                 <h2>Comments</h2>
                 <div class="comment" data-commentid="1">
                     <img class="comment__avatar" src="http://placehold.it/64x64" alt="" />
@@ -147,7 +147,7 @@
                 </div>
                 <hr />
                 <div class="comment__submit">
-                    <h3>Submit a comment</h3>
+                    <h2>Submit a comment</h2>
                     <textarea></textarea>
                     <input type="submit" value="Submit" />
                 </div>
@@ -165,7 +165,7 @@
                 $(".story__formatting--font").hide();
 
                 $(".story__top").click(function() {
-                    $("html, body").animate({
+                    $("main").animate({
                         scrollTop: 0
                     }, 200);
                 });
@@ -234,5 +234,5 @@
             </script>
 
 <?php
-    require_once("/templates/include/footer.php");
+    require_once("include/footer.php");
 ?>
