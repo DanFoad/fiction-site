@@ -1,0 +1,117 @@
+.user__header {
+	height: 256px;
+	position: relative;
+	background-image: url("../img/1bg");
+}
+.user__profile {
+	position: absolute;
+	top: 0;
+	bottom: -64px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	flex: row nowrap;
+	justify-content: center;
+	align-items: middle;
+	height: 128px;
+	line-height: 128px;
+	z-index: 20;
+}
+.user__profile h1, .user__profile h3 {
+	flex: 1;
+	color: #FFFFFF;
+}
+.user__profile h1 {
+	text-align: right;
+}
+.user__profile h3 {
+	font-size: 1em;
+	cursor: pointer;
+}
+.user__profile h3 i.fa {
+	margin-right: 8px;
+}
+.user__profile > * {
+	display: inline-block;
+	margin: 0 16px;
+}
+.user__profile img {
+	border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    flex: 0;
+}
+.user__profile .avatar {
+	position: relative;
+}
+.user__profile .avatar::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    margin: auto;
+}
+.user__profile .avatar--online::after {
+    background-color: #A6D850;
+}
+.user__profile .avatar--offline::after {
+    background-color: #C0C7CF;
+}
+.user__info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #FFFFFF;
+	height: 48px;
+	line-height: 8px;
+	z-index: 2;
+	display: flex;
+}
+.user__info h3 {
+	flex: 1;
+	height: 48px;
+	line-height: 48px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #C0C7CF;
+}
+.user__info h3:first-child {
+	text-align: right;
+	padding-right: 96px;
+}
+.user__info h3:last-child {
+	padding-left: 96px;
+}
+.user__info h3 i.fa {
+	margin: 0 16px;
+	font-size: 1.5em;
+	vertical-align: middle;
+	color: #5DABE0;
+}
+.user__description {
+	color: #A1B5BF;
+	line-height: 32px;
+}
+.user__content {
+	-webkit-columns: auto 2;
+	-moz-columns: auto 2;
+	columns: auto 2;
+	-webkit-column-gap: 48px;
+	-moz-column-gap: 48px;
+	column-gap: 48px;
+	padding: 48px;
+	padding-bottom: 0;
+}
+.user__content .container {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	margin-bottom: 48px;
+}

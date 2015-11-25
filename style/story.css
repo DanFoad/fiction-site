@@ -51,7 +51,7 @@
 }
 .story__controls--fixed {
     position: fixed;
-    left: 241px;
+    left: 240px;
     right: 0;
     top: 72px;
     border-radius: 0;
@@ -307,6 +307,9 @@
 }
 .story__chapters button:hover {
     background-color: #F8F8F8;
+}
+.story__favourite--active {
+    color: #E1DA1D;
 }
 .comments {
     width: 1024px;

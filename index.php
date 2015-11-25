@@ -16,6 +16,7 @@
 
     function user() {
         $id = 0;
+        $results["styles"] = "user";
         if (!isset($_GET["id"])) {
             // set $id to user's id
         } else {

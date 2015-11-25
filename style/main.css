@@ -92,11 +92,11 @@ hr.fade--toleft {
 }
 .container {
     background-color: #FFFFFF;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     padding: 16px;
-    padding-top: 48px;
+    padding-top: 64px;
     border: 1px solid #D0D9E0;
     position: relative;
 }
@@ -211,6 +211,9 @@ hr.fade--toleft {
 }
 .sidebar__profile .avatar--online::after {
     background-color: #A6D850;
+}
+.sidebar__profile .avatar--offline::after {
+    background-color: #C0C7CF;
 }
 .sidebar__external {
     list-style: none;

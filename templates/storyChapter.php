@@ -2,7 +2,7 @@
     require_once("include/header.php");
 ?>
 
-<div class="story">
+            <div class="story">
                 <div class="story__info">
                     <img class="story__image" src="http://placehold.it/256x128" alt=""/>
                     <h2 class="story__title">Example Story</h2>
@@ -28,8 +28,9 @@
                                 <i class="fa fa-angle-down"></i>
                             </div>
                          </div><!-- Remove space between inline elements
-                     --><div class="story__top" title="Jump to top"><i class="fa fa-arrow-up"></i></div>
-                    </div>
+                     --><div class="story__favourite" title="Add story to favourites"><i class="fa fa-star"></i></div><!--
+                     --><div class="story__commentlink" title="Add a comment"><i class="fa fa-comments"></i></div><!--
+                     --><div class="story__top" title="Jump to top"><i class="fa fa-arrow-up"></i></div></div>
                     <div class="story__statistics">
                         <div class="story__views">12,345 views</div>
                         <div class="story__likes"><i class="fa fa-thumbs-up"></i><span class="likeCount">300</span></div>
@@ -168,6 +169,17 @@
                     $("main").animate({
                         scrollTop: 0
                     }, 200);
+                });
+
+                $(".story__commentlink").click(function() {
+                    $("main").animate({
+                        scrollTop: $(".comment__submit textarea").offset().top
+                    }, 200);
+                    $(".comment__submit textarea").focus();
+                });
+
+                $(".story__favourite").click(function() {
+                    $(this).toggleClass("story__favourite--active");
                 });
 
                 $("#fontSizeOption").click(function() {

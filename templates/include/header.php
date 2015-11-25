@@ -64,11 +64,11 @@
 
             <dl class="sidebar__menu">
                 <dt class="sidebar__menu--title">Main Menu</dt>
-                <dd class="sidebar__link"><a href="#"><i class="fa fa-user"></i>Profile</a></dd>
-                <dd class="sidebar__link"><a href="#"><i class="fa fa-book"></i>Stories</a></dd>
-                <dd class="sidebar__link"><a href="#"><i class="fa fa-star"></i>Favourites</a></dd>
-                <dd class="sidebar__link"><a href="#"><i class="fa fa-question"></i>Random Story</a></dd>
-                <dd class="sidebar__link"><a href="#"><i class="fa fa-info-circle"></i>FAQ</a></dd>
+                <dd class="sidebar__link"><a href="#"><i class="fa fa-user fa-fw"></i>Profile</a></dd>
+                <dd class="sidebar__link"><a href="#"><i class="fa fa-book fa-fw"></i>Stories</a></dd>
+                <dd class="sidebar__link"><a href="#"><i class="fa fa-star fa-fw"></i>Favourites</a></dd>
+                <dd class="sidebar__link"><a href="#"><i class="fa fa-question fa-fw"></i>Random Story</a></dd>
+                <dd class="sidebar__link"><a href="#"><i class="fa fa-info-circle fa-fw"></i>FAQ</a></dd>
             </dl>
         </nav>
 
